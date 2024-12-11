@@ -1,0 +1,27 @@
+#!/bin/bash
+#this line is left empty for formatting purposes
+# Author : VihaanThat
+# Date Created : 11/12/24
+# Last Modified : 11/12/24
+#
+# Description : This code Prints a statement on the terminal
+# Usage : our_first_script
+echo "This is my first shell script"
+#exit codes are written to understand if code has been executed correctly, any non zero exit code generally indicates an error; exit code 1 represents a generic error
+#chmod +x "File_Name" is used to give executable permission to file to let it run on the system.
+exit 0
+
+
+#Proffessional Clean Code Syntax:
+#In every bash script that you are writing include the following {Author:. Date Created: Last Modified: Description: Usage} at the beginning of the code using comments.
+
+# permissions:
+# view the permissions of file inside a directory by cd into the directory and running ls -l 
+# file permissions are represented by a series of 10 characters strung together
+# -rwxrwxr-x 1 vihaanthat vihaanthat 998 Dec 11 12:38 our_first_script . first column shows permissions, third column shows the file owner, fourth column shows files group
+# ---------- represents a file 
+# d--------- represents a directory 
+# {r => read w=> write x=>execute} order is fixed -{CCC}{CCC}{CCC} where the first set is owner permissions second set is group permissins third set is public permissions
+# place a - instead of character if the permission is not granted
+# file permissions can be changed by running chmod {number} {filename} where the number can be calculated by going to any chmod calculator website
+# ALso learn how to incldue this executable script in the PATH variable to allow it's usage in all directories

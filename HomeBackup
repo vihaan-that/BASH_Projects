@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Author :
+# Created :
+# Last Modified : 
+#
+# Description :
+#
+
+echo "Hello, ${USER^}"
+echo "Your Home Directory at $HOME will be backed up now"
+
+currentdir=$(pwd)
+
+echo "Backups will be created at $currentdir"
+
+tar -cf "$currentdir/home_backup_$(date +%d-%m-%Y_%H-%M-%S).tar" $Home 2>/dev/null
+
+echo "Backup completed successfully"
+
+exit 0
+
