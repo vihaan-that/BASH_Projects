@@ -1,5 +1,0 @@
-#!/bin/bash
-
-mkdir at_dir
-touch hi.txt
-touch ar_dir/file{1..100}.txt
